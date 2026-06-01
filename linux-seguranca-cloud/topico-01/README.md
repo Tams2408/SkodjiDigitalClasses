@@ -29,11 +29,11 @@ Preparar o ambiente Linux e organizar a primeira evidência técnica.
 Foi criada a seguinte estrutura:
 
 linux-seguranca-cloud/
-├── topico-01/
+├──produto-final/
+└──topico-01/
 │   ├── evidencias/
 │   ├── comandos-topico-01.txt
 │   └── README.md
-└── produto-final/
 
 ## Comandos executados
 
