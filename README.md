@@ -1,4 +1,3 @@
-# SkodjiDigitalClasses
 # Registo da Atividade
 
 ## Trilho seguido
