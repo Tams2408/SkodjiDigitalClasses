@@ -1,0 +1,8 @@
+#whoami
+Mostra o utilizador atualmente autenticado.
+
+#id
+Mostra o identificador do utilizador, grupo principal e grupos associados.
+
+#groups
+Mostra os grupos as quais o utilizador pertence.
