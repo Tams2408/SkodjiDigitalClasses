@@ -1,0 +1,113 @@
+RELATORIO DO TRABALHO DE GRUPO
+PLANO DE CRIACAO DE PUBLICACAO DE SERVICO WEB
+
+1. IDENTIFICACAO DO GRUPO
+
+Grupo: Xablau
+
+Elementos: 
+- Ruddy Timas: Configuracao do servidor web e coordenacao do projeto
+- Tamiris Evora: Desenvolvimento do site
+- Wilson Mendonca: Documentacao e validacao
+
+-----------------------------------
+2. SERVICO ESCOLHIDO
+
+Opcao B - Pequeno Site com HTML e CSS
+
+Justificacao:
+
+- Permite demonstrar a publicacao de conteudo web
+- Nao necessita de PHP nem base de dados
+- Adequada para um mini-servidor Linux
+- Tem menor complexidade de implementacao
+- Facilita a validacao e documentacao do servico
+
+Componentes necessarios:
+
+- Ubuntu Linux
+- Nginx
+- HTML
+- CSS
+- Navegador Web
+
+Nivel de Complexidade: Intermedio
+
+Evidencias Esperadas:
+
+- Pagina acessivel no navegador
+- Testes com curl
+- Prints da publicacao
+
+--------------------------------------
+3. ARQUITETURA DE PUBLICACAO
+
+	Fluxo:
+
+	Cliente/Navegador -> HTTP -> Porta 80 -> Nginx -> Ficheiros HTML/CSS
+
+O navegador envia pedidos HTTP para o servidor Nginx atraves da porta 80.
+Nginx responde entregando os ficheiros HTML e CSS publicados.
+
+--------------------------------
+4. ROTA DE PUBLICACAO
+
+Tipo de servico: site HTML e CSS
+Servidor Web: Nginx
+Protocolo: HTTP
+Porta: 80
+Diretorio de publicacao: /var/www/html/topico-03
+Tecnologia adicional: nenhuma
+-------------------------
+5. TAREFAS TECNICAS PRINCIPAIS
+
+Tarefa: criar conteudo
+Acao: desenvolver index.html, sobre.html e style.css
+Resultado esperado: site funcional
+Evidencias: ficheiros criados
+----------------------------
+6. PLANO DE VALIDACAO
+
+Teste Local
+Acao: systemctl status nginx
+
+Resultado esperado: servico ativo
+
+Evidencia: output do terminal
+
+Teste navegador
+URL: http://192.168.1.164/topico-03
+
+Resultado esperado: pagina incial carregada
+
+Teste Pagina sobre
+URL: http/192.168.1.164/topico-03/sobre.html
+
+Resultado esperado: pagina carregada
+
+Teste CSS
+Acao: verificar estilos aplicados
+
+Resultado esperado: layout alterado
+
+-----------------------------------
+7. LIMITACOES E RISCOS INICIAIS
+
+Risco:
+Nginx nao instalado
+Impacto: servico indisponivel
+Medida: instalar o pacote
+
+Risco: ficheiros no diretorio errado
+Impacto: Erro 404
+Medida: confirmar localizacao
+---------------------------
+8. LINK REPOSITORIO GITHUB
+https://github.com/Tams2408/SkodjiDigital_linux-seguranca-cloud/tree/main/linux-seguranca-cloud/topico-03/atividade-grupo
+---------------------------------------------------
+9. CONCLUSAO
+
+O grupo optou pela publicacao de um pequeno site estatico utlizando HTML, CSS e Nginx.
+A solucao apresenta baixa complexidade, nao requer tecnologias adicionais como PHP ou base de dados e permite demonstrar de forma clara o processo de criacao, publicacao, validacao e documentacao de um servico web em ambiente Linux.
+A arquitetura proposta utiliza HTTP na porta 80 e o diretorio /var/www/html/topico-03 como local de publicacao.
+A validacao sera realizada atraves do navegador e do comando curl, garantindo que o servico esta disponivel.
